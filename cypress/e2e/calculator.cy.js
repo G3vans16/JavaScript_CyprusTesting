@@ -108,7 +108,7 @@ describe("Calculator", () => {
     cy.get('.display').should('contain', '999999999999999')
   })
 
-  it('should not divide by zero', () => {
+  it('should display error when divided by zero', () => {
     cy.get('#number1').click()
     cy.get('#operator-divide').click()
     cy.get('#number0').click()
